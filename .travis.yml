@@ -1,0 +1,10 @@
+language: python
+
+env:
+  matrix:
+    - 0
+    - 100
+
+
+script:
+  nosetests -a milestone=$MILESTONE
