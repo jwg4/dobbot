@@ -1,7 +1,7 @@
 language: python
 
 env:
-    - MILESTONE=10
+    - MILESTONE=2
     - MILESTONE=50
     - MILESTONE=100
 
