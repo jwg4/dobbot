@@ -5,7 +5,7 @@ def sets_to_play(first, second):
     common = s1 & s2
 
     if len(common) == 1:
-        return common[0]
+        return list(common)[0]
     else:
         if common:
             raise Exception("More than one common element.")
