@@ -52,7 +52,7 @@ def test_no_common_object():
     try:
         value = sets_to_play(a, b)
     except Exception as e:
-        assert e.message = "No common element."
+        assert e.message == "No common element."
         return
     assert False, "No exception thrown."
 
@@ -81,6 +81,6 @@ def test_two_common_objects():
     try:
         value = sets_to_play(a, b)
     except Exception as e:
-        assert e.message = "More than one common element."
+        assert e.message == "More than one common element."
         return
     assert False, "No exception thrown."
