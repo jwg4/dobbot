@@ -1,10 +1,14 @@
 language: python
 
 env:
-  matrix:
-    - 0
-    - 100
-
+    - MILESTONE=0
+    - MILESTONE=50
+    - MILESTONE=100
 
 script:
-  nosetests -a milestone=$MILESTONE
+  nosetests -a milestone<=$MILESTONE
+
+matrix:
+  allow_failures:
+    - env: MILESTONE=50
+    - env: MILESTONE=100
