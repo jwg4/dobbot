@@ -3,7 +3,7 @@ from nose.plugins.attrib import attr
 from dobbot.logic import sets_to_play
 
 
-@attr(milestone=5)
+@attr(milestone=1)
 def test_one_common_object():
     a = [
         "yin yang",
@@ -28,7 +28,7 @@ def test_one_common_object():
     assert value == "yin yang", value
 
 
-@attr(milestone=5)
+@attr(milestone=2)
 def test_no_common_object():
     a = [
         "yin yang",
@@ -57,7 +57,7 @@ def test_no_common_object():
     assert False, "No exception thrown."
 
 
-@attr(milestone=5)
+@attr(milestone=2)
 def test_two_common_objects():
     a = [
         "yin yang",
