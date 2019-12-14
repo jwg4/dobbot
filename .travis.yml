@@ -6,7 +6,7 @@ env:
     - MILESTONE=100
 
 script:
-  nosetests -A milestone<=$MILESTONE
+  nosetests -A "milestone<=${MILESTONE}"
 
 matrix:
   allow_failures:
